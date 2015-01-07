@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script type="text/javascript" src="resources/js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css"/>
+        <title>Bootstrap</title>
+		<style>
+            .main_wrapper {
+                width: 100%;
+                margin: 0 auto;
+
+            }
+            .top{ background-color : #703684 ;}
+            .middle{ background-color:#EDF0F5 ;}
+            .footer{background-color: #FFFFFF;}
+       
+            .pagelet{
+                background-color: white;
+                padding: 15px;
+                margin-bottom: 1px;
+
+            }
+            .pagelet_divider{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #FE7243;
+            }
+            .user_comment{
+                padding: 5px 0px 5px 0px; 
+            }
+             .message_friends_divider_full{
+                padding: 10px;
+                border: 2px solid lightgray;
+            }
+             
+            
+        </style>
+        <title>Car Info</title>
+    </head>
+    <body>
+        <!--HEADER-->
+        <div class="container-fluid" style="padding-top: 10px; background-color: #72D376; color: black;">
+            <div class="row form-group">
+                <div class="col-md-offset-2 col-md-4">
+                    <img src="phone_icon.png" width="18" height="18">
+                    <span style="font-weight: bold;">+880017 20233988</span>
+                </div>
+                <div class="col-md-offset-2 col-md-4">
+                    <img src="location_icon.png" width="18" height="18">
+                    <span style="font-weight: bold;">485/1, Block# C, Khilgaon, Dhaka- 1219.</span>
+                </div>
+            </div>
+        </div>
+
+        <!--BODY-->
+        <div class="container-fluid" style="background-color: #F4F4F4; color: black;">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="sunshine_logo.png" width="150px" height="100px">
+                </div>
+                <div class="col-md-9">
+                    <div style="padding-top: 25px;"class="btn-group form-control-static">
+                        <button style="font-weight: bold; width: 200px; height: 40px;" class="btn btn-default" type="button">Timeline</button>
+                        <button style="font-weight: bold; width: 200px; height: 40px;" class="btn btn-default" type="button">About</button>
+                        <button style="font-weight: bold; width: 200px; height: 40px;;" class="btn btn-default" type="button">Photo</button>
+                        <button style="font-weight: bold; width: 200px; height: 40px;;" class="btn btn-default" type="button">Friends</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group"></div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div style="background-color: #72D376;"> 
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span style="padding-left: 15px; font-size: 18; font-weight: bold;">Organise by</span>
+                            </div>
+                            <div class=" col-md-offset-2 col-md-10">
+                                <a style="color: #FE7243; text-decoration: underline;" href="#">Stock Id</a>
+                                <a style="color: #FE7243; text-decoration: underline;" href="#">Car Name</a>
+                                <a style="color: #FE7243; text-decoration: underline;" href="#">Model Year</a>
+                                <a style="color: #FE7243; text-decoration: underline;" href="#">Milege</a>
+                            </div>
+                            <div class="row form-group"></div>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div style="overflow-y: scroll; height: 750px; width: 320px;">
+                        <div class="col-md-12">
+                            <div class="message_friends_divider_full" >
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="car.jpg" width="80" height="80">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span>FOB Price:</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <img src="BDT_icon.png" width="15" height="15">
+                                            <span style="color: #FE7243; font-weight: bold;">15,00,000</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #72D376; font-weight: bold;">Toyota Aqua</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <span>Model:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">DBA-ZRR70G</span>
+                                    <span>cc:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">1,500</span>
+                                </div>
+                                <div class="col-md-12">
+                                    <span>Year:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">2015</span>
+                                    <span>Milege:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">29,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-12">
+                            <div class="message_friends_divider_full">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="car.jpg" width="80" height="80">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span>FOB Price:</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #FE7243; font-weight: bold;">15,00,000</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #72D376; font-weight: bold;">Toyota Aqua</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <span>Model:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">DBA-ZRR70G</span>
+                                    <span>cc:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">1,500</span>
+                                </div>
+                                <div class="col-md-12">
+                                    <span>Year:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">2015</span>
+                                    <span>Milege:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">29,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-12">
+                            <div class="message_friends_divider_full">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="car.jpg" width="80" height="80">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span>FOB Price:</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #FE7243; font-weight: bold;">15,00,000</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #72D376; font-weight: bold;">Toyota Aqua</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <span>Model:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">DBA-ZRR70G</span>
+                                    <span>cc:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">1,500</span>
+                                </div>
+                                <div class="col-md-12">
+                                    <span>Year:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">2015</span>
+                                    <span>Milege:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">29,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-12">
+                            <div class="message_friends_divider_full">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="car.jpg" width="80" height="80">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span>FOB Price:</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #FE7243; font-weight: bold;">15,00,000</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #72D376; font-weight: bold;">Toyota Aqua</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <span>Model:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">DBA-ZRR70G</span>
+                                    <span>cc:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">1,500</span>
+                                </div>
+                                <div class="col-md-12">
+                                    <span>Year:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">2015</span>
+                                    <span>Milege:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">29,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-12">
+                            <div class="message_friends_divider_full">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="car.jpg" width="80" height="80">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span>FOB Price:</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #FE7243; font-weight: bold;">15,00,000</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #72D376; font-weight: bold;">Toyota Aqua</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <span>Model:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">DBA-ZRR70G</span>
+                                    <span>cc:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">1,500</span>
+                                </div>
+                                <div class="col-md-12">
+                                    <span>Year:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">2015</span>
+                                    <span>Milege:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">29,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-12">
+                            <div class="message_friends_divider_full">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="car.jpg" width="80" height="80">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span>FOB Price:</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #FE7243; font-weight: bold;">15,00,000</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <span style="color: #72D376; font-weight: bold;">Toyota Aqua</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="row">
+                                <div class="col-md-12">
+                                    <span>Model:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">DBA-ZRR70G</span>
+                                    <span>cc:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">1,500</span>
+                                </div>
+                                <div class="col-md-12">
+                                    <span>Year:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">2015</span>
+                                    <span>Milege:</span>
+                                    <span style="color: #FE7243; font-weight: bold;">29,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span style="color: green; font-weight: bold;">TOYOTA NOAH 2010/7 YY</span>
+                            <div class="pagelet_divider"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <span style="color: #FE7243; font-weight: bold;">Location: </span>
+                            <span style="color: black; font-weight: bold;">Japan</span>
+                        </div>
+                        <div class="row form-group"></div>
+                        
+                                <div class="col-md-9">
+                                    <img src="car.jpg" width="660" height="320">
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <span style="color: black; font-weight: bold;">FOB Price:</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            &nbsp;
+                                            <img src="bdt_icon.png" width="28" height="30">
+                                            <span style="color: #FE7243; font-weight: bold; font-size: 20;">15,00,000</span>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <ul>
+                                                <span style="font-weight: bold;">
+                                                <li>Model: <span style="color: green;">HAKATA - JAPAN</span></li>
+                                                <li>Transmission(Gear): <span style="color: green;">AT</span></li>
+                                                <li>Drive: <span style="color: green;">4WD</span></li>
+                                                <li>Steering Wheel: <span style="color: green;">RHD</span></li>
+                                                <li>Engine-Type: <span style="color: green;">2TR</span></li>
+                                                <li>CC: <span style="color: green;">2,700</span></li>
+                                                <li>Fuel: <span style="color: green;">Petrol</span></li>
+                                                <li>Stock No: <span style="color: green;">546211</span></li>
+                                                <li>Year: <span style="color: green;">2012</span></li>
+                                                <li>Color: <span style="color: green;">Black</span></li>
+                                                <li>Door: <span style="color: green;">5</span></li>
+                                                <li>Seats: <span style="color: green;">7</span></li>
+                                                <li>Body Style: <span style="color: green;">SUV</span></li>
+                                                <li>Mileage: <span style="color: green;">27,000</span></li></span>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="row form-group"></div>
+                        <div class="col-md-3">
+                            <button class="btn-success form-control" type="button">Sale</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn-danger form-control" type="button">Sold</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn-success form-control" type="button">Negotiate</button>
+                        </div>
+                         <div class="row form-group"></div>
+                        <div class="col-md-12">
+                            <span style="font-weight: bold;">Other Photos:</span>
+                        </div>
+                         <div class="row form-group"></div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img  src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                            </div>
+                            <div class="row form-group"></div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                            </div>
+                            <div class="row form-group"></div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car_1.jpg" width="85px" height="75px">
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="car.jpg" width="85px" height="75px">
+                                </div>
+                        </div>
+                            
+                        </div>
+                        <div class="row form-group"></div>
+                        <div class="row form-group"></div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div style="background-color: green; padding: 10px;">
+                                            <center><span style="font-weight: bold;">Accessories</span></center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; width: 150px; padding-top: 10px;">
+                                    Air Bag
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Anti-Lock Break System
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Air Conditioner
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Alloy Wheels
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group"></div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 143px; width: 150px; padding-top: 10px;">
+                                    Back Tire
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Fog Lights
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Grill Guard
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Leather Seats
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group"></div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 143px; width: 150px; padding-top: 10px;">
+                                    Navigation
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Power Steering
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Power Windows
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Roof Rails
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group"></div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; width: 150px; padding-top: 10px;">
+                                    Rear Spoiler
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Sun Roof
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 143px; padding-top: 10px;">
+                                    TV
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 143px; padding-top: 10px;">
+                                    Dual Air Bags
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <div class="container-fluid" style="background-color: #4B4B4B; color: white;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="font-weight: bold; padding: 15px;">
+                        Copyright &COPY; 2015. <span style="color: green;">SunShine Car Center.</span> All rights reserved              
+                        <div align='right'>
+                        Developed by <span style="color: green;">SAMPAN-IT</span>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
