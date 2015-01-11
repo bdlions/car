@@ -34,7 +34,15 @@ and open the template in the editor.
                 font-weight: bold;
                 font-size: 17px;
             }
-
+            .button{
+                width:100px!important; 
+                text-align: center;
+                font-weight: bold;
+            }
+            *{
+                outline-color: blue;
+            }
+            
 /*================================  pagelets  ================================*/
 .comment_box{
     
