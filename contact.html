@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <script type="text/javascript" src="resources/js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="resources/js/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="resources/js/script.js"></script>
         <link rel="stylesheet" href="resources/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="resources/css/styles.css"/>
         <title>Bootstrap</title>
@@ -29,13 +30,13 @@
         <!--HEADER-->
         <div class="container-fluid" style="padding-top: 10px; background-color: #72D376; color: black;">
             <div class="row form-group">
-                <div class="col-md-offset-4 col-md-2">
-                    <img src="phone_icon.png" width="18" height="18">
-                    <span class="contact_info">+880017 20233988</span>
-                </div>
-                <div class="col-md-offset-2 col-md-4">
+                <div class="pull-right col-md-4">
                     <img src="location_icon.png" width="18" height="18">
                     <span class="contact_info">485/1, Block# C, Khilgaon, Dhaka- 1219.</span>
+                </div>
+                <div class="pull-right col-md-3">
+                    <img src="phone_icon.png" width="18" height="18">
+                    <span class="contact_info">+880017 20233988</span>
                 </div>
             </div>
         </div>
@@ -44,14 +45,16 @@
         <div class="container">
             <div class="row form-group">
                 <div class="col-md-3">
-                    <img src="sunshine_logo.png" width="150px" height="100px">
+                    <img src="sunshine_logo.png" width="150" height="100">
                 </div>
-                <div class="col-md-9">
-                    <div style="padding-top: 25px;"class="btn-group form-control-static">
-                        <button style="font-weight: bold; width: 200px; height: 40px;" class="btn btn-default" type="button">Timeline</button>
-                        <button style="font-weight: bold; width: 200px; height: 40px;" class="btn btn-default" type="button">About</button>
-                        <button style="font-weight: bold; width: 200px; height: 40px;;" class="btn btn-default" type="button">Photo</button>
-                        <button style="font-weight: bold; width: 200px; height: 40px;;" class="btn btn-default" type="button">Friends</button>
+                <div class="col-md-8 col-md-offset-1 menu">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li class='active'><a href='#'>Home</a></li>
+                            <li><a href='#'>Export Site</a></li>
+                            <li><a href='#'>Contact Us</a></li>
+                            <li><a href='#'>About Us</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -124,8 +127,8 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="row form-group">
-                            <span style="color:green">Contact Us </span>
+                        <div class="row form-group heading">
+                            Contact <span> Us </span>
                             <div class="pagelet_divider"></div>
                         </div>
                         <div class="row form-group">

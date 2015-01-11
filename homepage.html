@@ -2,13 +2,14 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <script type="text/javascript" src="resources/js/jquery-2.1.0.min.js"></script>
+        <script type="text/javascript" src="resources/js/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="resources/js/script.js"></script>
         <link rel="stylesheet" href="resources/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="resources/css/styles.css"/>
         <title>Bootstrap</title>
         <style>
-        .pagelet_divider{
+            .pagelet_divider{
                 margin-top: 15px;
                 margin-bottom: 15px;
                 border-bottom: 2px solid #FE7243;
@@ -23,268 +24,255 @@
                 border-bottom: 1px solid lightgray;
             }
         </style>
-            
+
     </head>
     <body>
-	 <!--HEADER-->
+        <!--HEADER-->
         <div class="container-fluid" style="padding-top: 10px; background-color: #72D376; color: black;">
             <div class="row form-group">
-                <div class="col-md-offset-4 col-md-2">
-                    <img src="phone_icon.png" width="18" height="18">
-                    <span class="contact_info">+880017 20233988</span>
-                </div>
-                <div class="col-md-offset-2 col-md-4">
+                <div class="pull-right col-md-4">
                     <img src="location_icon.png" width="18" height="18">
                     <span class="contact_info">485/1, Block# C, Khilgaon, Dhaka- 1219.</span>
+                </div>
+                <div class="pull-right col-md-3">
+                    <img src="phone_icon.png" width="18" height="18">
+                    <span class="contact_info">+880017 20233988</span>
                 </div>
             </div>
         </div>
 
         <!--BODY-->
-    <div class="container">
-	    <div class="row form-group">
+        <div class="container">
+            <div class="row form-group">
                 <div class="col-md-3">
                     <img src="sunshine_logo.png" width="150px" height="100px">
                 </div>
-                <div class="col-md-9">
-                    <div style="padding-top: 25px;"class="btn-group form-control-static">
-                        <button style="font-weight: bold; width: 200px; height: 40px;" class="btn btn-default" type="button">Timeline</button>
-                        <button style="font-weight: bold; width: 200px; height: 40px;" class="btn btn-default" type="button">About</button>
-                        <button style="font-weight: bold; width: 200px; height: 40px;;" class="btn btn-default" type="button">Photo</button>
-                        <button style="font-weight: bold; width: 200px; height: 40px;;" class="btn btn-default" type="button">Friends</button>
+                <div class="col-md-8 col-md-offset-1 menu">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li class='active'><a href='#'>Home</a></li>
+                            <li><a href='#'>Export Site</a></li>
+                            <li><a href='#'>Contact Us</a></li>
+                            <li><a href='#'>About Us</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        <div class="row form-group">
-            <div class="col-md-2">
-                <div class="message_friends_divider_full">
-                    <span style="color: #398439">Search By Make</span>
-                </div>
-                <div class="message_friends_divider_others">
-                    <div class="form-group">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                    </button>
+            <div class="row form-group">
+                <div class="col-md-2">
+                    <div class="message_friends_divider_full search_header">
+                        Search<span> By Make</span>
                     </div>
-                    <div class="form-group">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                    </button>
-                    </div>
-                    <div class="form-group">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                    </button>
-                    </div>
-                    <div class="form-group">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                    </button>
-                    </div>
-                    <div class="form-group">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                    </button>
-                    </div>
-                    <div class="form-group">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                    </button>
-                    </div>
-                    <div class="form-group">
-                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                        <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
-                    </button>
-                    </div>
-                    <div class="form-group"></div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="message_friends_divider_full">
-                <div class="row form-group">
-                    <div class="col-md-12">
-                    <img src="homepage.jpg" style="width:100%; height:330px">
+                    <div class="message_friends_divider_others search_by">
+                        <div class="form-group"><a href="#"><img src="toyota_icon.png" alt=".."><span class="car_type">Toyota</span></a></div>
+                        <div class="form-group"><a href="#"><img src="nissan_icon.png" alt=".."><span class="car_type">Nissan</span></a></div>
+                        <div class="form-group"><a href="#"><img src="honda_icon.png" alt=".."><span class="car_type">Honda</span></a></div>
+                        <div class="form-group"><a href="#"><img src="mazda_icon.png" alt=".."><span class="car_type">Mazda</span></a></div>
+                        <div class="form-group"><a href="#"><img src="mitsubishi_icon.png" alt=".."><span class="car_type">Mitsubishi</span></a></div>
+                        <div class="form-group"><a href="#"><img src="suzuki.png" alt=".."><span class="car_type">Suzuki</span></a></div>
+                        <div class="form-group"><a href="#"><img src="Subaru.png" alt=".."><span class="car_type">Subaru</span></a></div>
                     </div>
                 </div>
-                <div class="row form-group">
-                    <div class="col-md-4">
-                        <span style="color: #4cae4c; font-size: 18px">Upto 30% off</span>
-                    </div>
-                    <div class="col-md-offset-4 col-md-4 activeslide">
-                        <input type="radio" name="">
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4">
-                <div class="message_friends_divider_full">
-                    <span>Quick Search</span>
-                </div>
-                <div class="message_friends_divider_others">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Make: </label>
-                                <select class="form-control">
-                                    <option>Any</option>
-                                    <option>Toyota</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Price min: </label>
-                                <select class="form-control">
-                                    <option>No max</option>
-                                    <option>2000$</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Year from: </label>
-                                <select class="form-control">
-                                    <option>Any</option>
-                                    <option>12-12-12</option>
-                                </select>
+                <div class="col-md-6">
+                    <div class="message_friends_divider_full">
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <img src="homepage.jpg" style="width:100%; height:330px">
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Model: </label>
-                                <select class="form-control">
-                                    <option>Any</option>
-                                    <option>Toyota</option>
-                                </select>
+                        <div class="row form-group">
+                            <div class="col-md-4">
+                                <span style="color: #4cae4c; font-size: 18px">Upto 30% off</span>
                             </div>
-                            <div class="form-group">
-                                <label>Price max: </label>
-                                <select class="form-control">
-                                    <option>any</option>
-                                    <option>2000$</option>
-                                </select>
+                            <div class="col-md-offset-4 col-md-4 activeslide">
+                                <input type="radio" name="">
                             </div>
-                            <div class="form-group">
-                                <label>Year to: </label>
-                                <select class="form-control">
-                                    <option>Any</option>
-                                    <option>12-12-14</option>
-                                </select>
-                            </div>
-                            
                         </div>
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="message_friends_divider_full search_header">
+                        Quick <span>Search</span>
+                    </div>
+                    <div class="message_friends_divider_others">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Make: </label>
+                                    <select class="form-control">
+                                        <option>Any</option>
+                                        <option>Toyota</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Price min: </label>
+                                    <select class="form-control">
+                                        <option>No max</option>
+                                        <option>2000$</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Year from: </label>
+                                    <select class="form-control">
+                                        <option>Any</option>
+                                        <option>12-12-12</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Model: </label>
+                                    <select class="form-control">
+                                        <option>Any</option>
+                                        <option>Toyota</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Price max: </label>
+                                    <select class="form-control">
+                                        <option>any</option>
+                                        <option>10000$</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Year to: </label>
+                                    <select class="form-control">
+                                        <option>Any</option>
+                                        <option>12-12-14</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Body type:</label>
+                                    <select class="form-control">
+                                        <option>Any</option>
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-md btn-success">search</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="message_friends_divider_full search_header">
+                            Search <span>By Price</span>
+                        </div>
+                        <div class="message_friends_divider_others search_by">
+                            <div class="form-group"><a href="#">Over $20000</a></div>
+                            <div class="form-group"><a href="#">Over $15000</a></div>
+                            <div class="form-group"><a href="#">under $10000</a></div>
+                            <div class="form-group"><a href="#">under $5000</a></div>
+                            <div class="form-group"><a href="#">under $4000</a></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="message_friends_divider_full search_header">
+                            Search <span>By Year</span>
+                        </div>
+                        <div class="message_friends_divider_others search_by">
+                            <div class="form-group"><a href="#">Under 2003</a></div>
+                            <div class="form-group"><a href="#">2004 Onwards</a></div>
+                            <div class="form-group"><a href="#">2005 Onwards</a></div>
+                            <div class="form-group"><a href="#">2006 Onwards</a></div>
+                            <div class="form-group"><a href="#">2007 Onwards</a></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="message_friends_divider_full search_header">
+                            Search <span>By Type</span>
+                        </div>
+                        <div class="message_friends_divider_others search_by">
+                            <div class="form-group"><a href="#"><img src="sedan_icon.png" alt=".."><span class="car_type">Sedan</span></a></div>
+                            <div class="form-group"><a href="#"><img src="wagon_icon.png" alt=".."><span class="car_type">Wagon</span></a></div>
+                            <div class="form-group"><a href="#"><img src="van_icon.png" alt=".."><span class="car_type">Van</span></a></div>
+                            <div class="form-group"><a href="#"><img src="truck_icon.png" alt=".."><span class="car_type">Truck</span></a></div>
+                            <div class="form-group"><a href="#"><img src="other_car_icon.png" alt=".."><span class="car_type">Others</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-----------------Recent Vehicles--------------------->
+                
+                <div class="col-md-8">
+                    <div class="form-group heading">
+                        Recent <span>Vehicles</span>
+                    </div>
+                    <div class="pagelet_divider"></div>
+                    <div class="row form-group"></div>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                            <label>body type:</label>
-                            <select class="form-control">
-                                    <option>Any</option>
-                                    <option></option>
-                                </select>
+                        <div class="col-md-4 form-group">
+                            <div style="position: relative;">
+                                <img src="homepage.jpg" style="height: 150px; width: 230px">
+                                <div style="position:absolute; left: 180px; bottom: 10px">
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div style="position:absolute; left: 130px; bottom: 10px">
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-success">search</button>
+                                <div style="font-size: 20px"> 2014 Aston Mirtin DB9</div>
+                                <div>FOB Price:<span style="color: red">$15,000</span></div>
                             </div>
-                            
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <div style="position: relative;">
+                                <img src="homepage.jpg" style="height: 150px; width: 230px">
+                                <div style="position:absolute; left: 180px; bottom: 10px">
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div style="position:absolute; left: 130px; bottom: 10px">
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div style="font-size: 20px"> 2014 Aston Mirtin DB9</div>
+                                <div>FOB Price:<span style="color: red">$15,000</span></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <div style="position: relative;">
+                                <img src="homepage.jpg" style="height: 150px; width: 230px">
+                                <div style="position:absolute; left: 180px; bottom: 10px">
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div style="position:absolute; left: 130px; bottom: 10px">
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div style="font-size: 20px"> 2014 Aston Mirtin DB9</div>
+                                <div>FOB Price:<span style="color: red">$15,000</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-2">
-                <div class="form-group">
-                    <div class="message_friends_divider_full">
-                        <span style="color: #398439">Search By Price</span>
-                    </div>
-                    <div class="message_friends_divider_others">
-                        <div class="form-group">Over 5000</div>
-                        <div class="form-group">under $5000</div>
-                        <div class="form-group">under $5000</div>
-                        <div class="form-group">under $5000</div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="message_friends_divider_full">
-                        <span style="color: #398439">Search By Type</span>
-                    </div>
-                    <div class="message_friends_divider_others">
-                        <div class="form-group"><button type="button" class="btn btn-default btn-lg">
-                                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Sedan
-                            </button></div>
-                        <div class="form-group"><button type="button" class="btn btn-default btn-lg">
-                                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Sedan
-                            </button></div>
-                        <div class="form-group"><button type="button" class="btn btn-default btn-lg">
-                                <span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Sedan
-                            </button></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="form-group"style="border-bottom: 1px solid lightgray">
-                    <span style="color: #398439;font-size: 20px">Recent Vehicles</span>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 form-group">
-                        <div style="position: relative;">
-                                <img src="homepage.jpg" style="height: 150px; width: 230px">
-                                <div href=""style="position:absolute; left: 180px; bottom: 10px">
-                                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                                <div href=""style="position:absolute; left: 130px; bottom: 10px">
-                                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div style="font-size: 20px"> 2014 Aston Mirtin DB9</div>
-                                <div>FOB Price:<span style="color: red">$15,000</span></div>
-                            </div>
-                    </div>
-                    <div class="col-md-4 form-group">
-                        <div style="position: relative;">
-                                <img src="homepage.jpg" style="height: 150px; width: 230px">
-                                <div href=""style="position:absolute; left: 180px; bottom: 10px">
-                                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                                <div href=""style="position:absolute; left: 130px; bottom: 10px">
-                                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div style="font-size: 20px"> 2014 Aston Mirtin DB9</div>
-                                <div>FOB Price:<span style="color: red">$15,000</span></div>
-                            </div>
-                    </div>
-                    <div class="col-md-4 form-group">
-                        <div style="position: relative;">
-                                <img src="homepage.jpg" style="height: 150px; width: 230px">
-                                <div href=""style="position:absolute; left: 180px; bottom: 10px">
-                                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                                        <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                                <div href=""style="position:absolute; left: 130px; bottom: 10px">
-                                    <button type="button" class="btn btn-default" aria-label="Left Align">
-                                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div style="font-size: 20px"> 2014 Aston Mirtin DB9</div>
-                                <div>FOB Price:<span style="color: red">$15,000</span></div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<!--FOOTER-->
+        <!--FOOTER-->
         <div class="container-fluid" style="background-color: #4B4B4B; color: white;">
             <div class="row">
                 <div class="col-md-offset-1 col-md-8 footer_info">
@@ -296,5 +284,5 @@
                 </div>
             </div>
         </div>
-</body>
+    </body>
 </html>
