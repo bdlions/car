@@ -65,7 +65,7 @@ and open the template in the editor.
 
 
 
-/*================================  Landing Page  ================================*/
+/*================================  Landing Page (purnob)  ================================*/
 
 
 .search_header{
@@ -86,8 +86,20 @@ and open the template in the editor.
 .car_type{
     padding: 0 0 0 15px;
 }
-
-
+.car_name{
+    font-size: 16px; 
+    color:#7b7b7b;
+    padding: 10px 0 0 0;
+}
+.FOB_price{
+    color:#5e5e5e;
+    font-weight: bold;
+}
+.FOB_price span{
+    color:#fd6e46;
+    padding: 0 0 0 5px;
+    
+}
 
 /*================================  car-details (purnob)================================*/
 
