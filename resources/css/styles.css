@@ -107,6 +107,11 @@ and open the template in the editor.
 
 /*================================  car-details (purnob)================================*/
 
+.main_name{
+    color: #2d9431; 
+    font-weight: bold;
+    font-size: 16px;
+}
 .Accessories_header{
     
     background-color: #2d9431;
