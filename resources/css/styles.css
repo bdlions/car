@@ -42,6 +42,10 @@ and open the template in the editor.
             *{
                 outline-color: blue;
             }
+            button{
+                font-weight: bold!important ;
+                
+            }
             
 /*================================  pagelets  ================================*/
 .comment_box{
