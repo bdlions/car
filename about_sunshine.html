@@ -35,6 +35,17 @@
                 border: 2px solid lightgray;
             }
         </style>
+        <script type="text/javascript">
+            $(function(){
+                $("#sunshine_car-gallary img").on("click", function(){
+                    $('#sunshine_big_car').attr("src", $(this).attr("src"));
+                });
+                
+                $("#liton_car-gallary img").on("click", function(){
+                    $('#liton_big_car').attr("src", $(this).attr("src"));
+                });
+            });
+        </script>
         <title>About</title>
     </head>
     <body>
@@ -80,9 +91,9 @@
             
             <div class="row form-group">
                 <div class="col-md-6">
-                    <img src="car.jpg" width="450" height="250">
+                    <img id="sunshine_big_car" src="car.jpg" width="450" height="250">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5" id="sunshine_car-gallary">
                     <div class="row">
                         <div class="col-md-6">
                             <img  src="car_1.jpg" width="180" height="120">
@@ -121,7 +132,7 @@
             <div class="row form-group"></div>
             <div class="row">
                 <div class="col-md-12">
-                    <img src="Liton.png" width="70" height="60">
+                    <img  src="Liton.png" width="70" height="60">
                 </div>
             </div>
             <div class="row">
@@ -131,10 +142,10 @@
                 </div>
             </div>
             <div class="row form-group">
-                <div class="col-md-6">
-                    <img src="car.jpg" width="450" height="250">
+                <div class="col-md-6" >
+                    <img id="liton_big_car" src="car.jpg" width="450" height="250">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5" id="liton_car-gallary">
                     <div class="row">
                         <div class="col-md-6">
                             <img  src="car_1.jpg" width="180" height="120">
