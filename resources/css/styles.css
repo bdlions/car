@@ -110,7 +110,7 @@ and open the template in the editor.
 }
 .organize_title{
     padding: 0 0 0 15px; 
-    font-size: 18; 
+    font-size: 17px; 
     font-weight: bold;
     color:#3c3c3c;
 }
@@ -133,6 +133,11 @@ and open the template in the editor.
     font-weight: bold; 
     font-size: 18px;
 }
+.details_value{
+    color: #FE7243; 
+    font-weight: bold;
+    font-size: 12px;
+}
 
 /*================================  Contact (purnob)================================*/
 
@@ -146,8 +151,11 @@ and open the template in the editor.
     color: #4b4b4b;
     padding: 0 0 0 5px;
     font-weight: bold;
+    text-align: justify;
 }
-
+.form_title{
+    color:#868686;
+}
 /*================================  footer (purnob)================================*/
 
 .anchor_style{
