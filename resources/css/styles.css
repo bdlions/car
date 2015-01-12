@@ -341,3 +341,27 @@ and open the template in the editor.
 #cssmenu.small-screen #menu-button.menu-opened:before {
   background: #444444;
 }
+
+
+
+/*================= Light Box====================*/
+
+ul{
+    list-style-type:none;
+    padding-left: 0;
+}
+.gallery li {
+    display: block;
+    float: left;
+    height: 100px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    width: 100px;
+}
+.gallery li a {
+    height: 100px;
+    width: 100px;
+}
+.gallery li a img {
+    max-width: 100px;
+}
