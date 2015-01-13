@@ -23,13 +23,17 @@ and open the template in the editor.
                 border-bottom: 1px solid #FE7243;
             }
             
-            .heading{
-                color:#2d9431;
+            .heading,.heading_export{
                 font-weight: bold;
                 font-size: 18px;
-                
             }      
-            .heading span{
+            .heading{
+                color:#2d9431;
+            }      
+            .heading_export{
+                color:#198fd0;
+            }      
+            .heading span,.heading_export span{
                 color:#5c5c5c;
                 font-weight: bold;
                 font-size: 17px;
@@ -72,17 +76,26 @@ and open the template in the editor.
 /*================================  Landing Page (purnob)  ================================*/
 
 
-.search_header{
+.search_header,.search_header_liton,.search_header_export{
     font-weight: bold;
-    color:#2d9431;
     font-size:14px;
-    
-    
 }
-.search_header span{
+.search_header{
+    color:#2d9431;
+}
+.search_header_export{
+    color:#198fd0;
+}
+
+.search_header_liton{
+    color: #198fd0;
+}
+
+.search_header span,.search_header_export span{
     color:#3c3c3c;
     font-size: 12px!important;
 }
+
 .search_by div a{
     color:#3c3c3c;
     font-weight: bold;
@@ -95,26 +108,37 @@ and open the template in the editor.
     color:#7b7b7b;
     padding: 10px 0 0 0;
 }
-.FOB_price{
+.FOB_price,.FOB_price_export{
     color:#5e5e5e;
     font-weight: bold;
+}
+.FOB_price_export span{
+    color:#ed1f24;
+    padding: 0 0 0 5px;
 }
 .FOB_price span{
     color:#fd6e46;
     padding: 0 0 0 5px;
-    
 }
 
 /*================================  car-details (purnob)================================*/
 
+.main_name,.main_name_export{
+    font-weight: bold;
+    font-size: 18px;
+}
 .main_name{
     color: #2d9431; 
-    font-weight: bold;
-    font-size: 16px;
+}
+.main_name_export{
+    color: #198fd0; 
 }
 .Accessories_header{
-    
     background-color: #2d9431;
+    padding: 10px;
+}
+.Accessories_header_export{
+    background-color: #198fd0;
     padding: 10px;
 }
 .organize_title{
@@ -130,12 +154,19 @@ and open the template in the editor.
     color: #FE7243;
     text-decoration: underline;
 }
-.details_title{
+.organize_export{
+    color: #ed1f24;
+    text-decoration: underline;
+}
+.details_title,.details_title_export{
     color:#3c3c3c;
     font-weight: bold;
 }
 .details_title span{
      color:#2d9431;
+}
+.details_title_export span{
+     color:#198fd0;
 }
 .tk{
     color: #FE7243; 
@@ -169,6 +200,11 @@ and open the template in the editor.
 
 .anchor_style{
     color: #71d375;
+}
+.anchor_style_export{
+    color: #198fd0;
+}
+.anchor_style,.anchor_style_export{
     font-weight: bold;
 }
 .footer_info{
