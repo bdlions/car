@@ -312,8 +312,9 @@ and open the template in the editor.
   
 }
 
-.cssmenu_liton > ul > li > a:hover {
+.cssmenu_liton > ul > li:hover > a,.cssmenu_liton > ul > li > a:hover {
   background: #42ade8!important;
+  color: white!important;
 }
 
 #cssmenu > ul > li:after {
