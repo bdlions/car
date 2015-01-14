@@ -255,6 +255,10 @@ and open the template in the editor.
  
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -2px 0px #aacf8a, inset 0 1px 0 #d4e7c4;
 }
+.cssmenu_liton{
+    border: 1px solid #42ade8!important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -2px 0px #42ade8, inset 0 1px 0 #42ade8!important;
+}
 #cssmenu > ul > li {
   float: left;
 }
@@ -298,12 +302,20 @@ and open the template in the editor.
 #cssmenu > ul > li.active > a {
   color: #2d9431;
 }
+.cssmenu_liton> ul > li.active > a {
+  color: #42ade8!important;
+}
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
   background: #71d375;
   color: white;
   
 }
+
+.cssmenu_liton > ul > li > a:hover {
+  background: #42ade8!important;
+}
+
 #cssmenu > ul > li:after {
   content: '';
   position: absolute;
