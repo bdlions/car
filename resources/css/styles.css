@@ -51,6 +51,11 @@ and open the template in the editor.
                 
             }
             
+            *:focus {
+                outline:none!important; /* removes ugly dotted border but may make template more unsuable, up to you
+                                                 if you want to keep it! */
+            }
+            
 /*================================  pagelets  ================================*/
 .comment_box{
     
