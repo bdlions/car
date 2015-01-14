@@ -48,7 +48,8 @@ and open the template in the editor.
             }
             button{
                 font-weight: bold!important ;
-                
+                color:white;
+                text-align: center;
             }
             
             *:focus {
@@ -449,3 +450,53 @@ ul{
 .gallery li a img {
     max-width: 100px;
 }
+
+/*==========================Carousel-Slider=======================*/
+
+.carousel-fade .carousel-inner .item {
+                opacity: 0;
+                transition-property: opacity;
+            }
+
+            .carousel-fade .carousel-inner .active {
+                opacity: 1;
+            }
+
+            .carousel-fade .carousel-inner .active.left,
+            .carousel-fade .carousel-inner .active.right {
+                left: 0;
+                opacity: 0;
+                z-index: 1;
+            }
+
+            .carousel-fade .carousel-inner .next.left,
+            .carousel-fade .carousel-inner .prev.right {
+                opacity: 1;
+            }
+
+            .carousel-fade{
+                z-index: 2;
+            }
+
+
+            @media all and (transform-3d), (-webkit-transform-3d) {
+                .carousel-fade .carousel-inner > .item.next,
+                .carousel-fade .carousel-inner > .item.active.right {
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+                .carousel-fade .carousel-inner > .item.prev,
+                .carousel-fade .carousel-inner > .item.active.left {
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+                .carousel-fade .carousel-inner > .item.next.left,
+                .carousel-fade .carousel-inner > .item.prev.right,
+                .carousel-fade .carousel-inner > .item.active {
+                    opacity: 1;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+            }
