@@ -57,6 +57,7 @@ button{
                                      if you want to keep it! */
 }
 
+
 /*================================  pagelets  ================================*/
 .comment_box{
 
@@ -524,5 +525,18 @@ ul{
             }
             #feedback a:hover{
                 background-position: center right;
+            }
+            
+            @media all and (max-width: 991px) and (min-width: 508px){
+                #feedback{
+                    top:160px!important;
+                    left:-220px;
+                }
+            }
+            @media all and (max-width: 508px){
+                #feedback{
+                    top:180px!important;
+                    left:-220px;
+                }
             }
             

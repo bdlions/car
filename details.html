@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="resources/css/styles.css"/>
         <link rel="stylesheet" href="resources/css/lightGallery.css"/>
         <script type="text/javascript" src="resources/js/lightGallery.js"></script>
+        <script type="text/javascript" src="resources/js/slider_feedback.js"></script>
         
         <style>
             .main_wrapper {
@@ -50,15 +51,6 @@
 			$("#auto-loop").lightGallery();
 		});
          </script>
-         <script type="text/javascript">
-            $(function(){
-                $('.pull_feedback').on("click", function(e){
-                    $("#feedback").animate({left:$("#feedback").css("left") == "0px" ? "-390px" :"0px"});
-                });
-                
-            });
-        </script>
-        
         <title>Details</title>
     </head>
     <body>
