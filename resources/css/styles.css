@@ -18,54 +18,54 @@ and open the template in the editor.
 }
 
 .pagelet_divider{
-                margin-top: 10px;
-                margin-bottom: 15px;
-                border-bottom: 1px solid #FE7243;
-            }
-            
-            .heading,.heading_export{
-                font-weight: bold;
-                font-size: 18px;
-            }      
-            .heading{
-                color:#2d9431;
-            }      
-            .heading_export{
-                color:#198fd0;
-            }      
-            .heading span,.heading_export span{
-                color:#5c5c5c;
-                font-weight: bold;
-                font-size: 17px;
-            }
-            .button{
-                width:100px!important; 
-                text-align: center;
-                font-weight: bold;
-            }
-            *{
-                outline-color: blue;
-            }
-            button{
-                font-weight: bold!important ;
-                color:white;
-                text-align: center;
-            }
-            
-            *:focus {
-                outline:none!important; /* removes ugly dotted border but may make template more unsuable, up to you
-                                                 if you want to keep it! */
-            }
-            
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #FE7243;
+}
+
+.heading,.heading_export{
+    font-weight: bold;
+    font-size: 18px;
+}      
+.heading{
+    color:#2d9431;
+}      
+.heading_export{
+    color:#198fd0;
+}      
+.heading span,.heading_export span{
+    color:#5c5c5c;
+    font-weight: bold;
+    font-size: 17px;
+}
+.button{
+    width:100px!important; 
+    text-align: center;
+    font-weight: bold;
+}
+*{
+    outline-color: blue;
+}
+button{
+    font-weight: bold!important ;
+    color:white;
+    text-align: center;
+}
+
+*:focus {
+    outline:none!important; /* removes ugly dotted border but may make template more unsuable, up to you
+                                     if you want to keep it! */
+}
+
 /*================================  pagelets  ================================*/
 .comment_box{
-    
+
 }
 .pagelet{
     background-color: white;
     padding: 15px;
     margin-bottom: 1px;
-    
+
 }
 .pagelet_divider{
     margin-top: 15px;
@@ -73,7 +73,7 @@ and open the template in the editor.
     border-bottom: 1px solid lightgray;
 }
 .user_comment{
-   padding: 5px 0px 5px 0px; 
+    padding: 5px 0px 5px 0px; 
 }
 
 
@@ -169,10 +169,10 @@ and open the template in the editor.
     font-weight: bold;
 }
 .details_title span{
-     color:#2d9431;
+    color:#2d9431;
 }
 .details_title_export span{
-     color:#198fd0;
+    color:#198fd0;
 }
 .tk{
     color: #FE7243; 
@@ -230,201 +230,201 @@ and open the template in the editor.
 #cssmenu ul li,
 #cssmenu ul li a,
 #cssmenu #menu-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  line-height: 1;
-  display: block;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 #cssmenu:after,
 #cssmenu > ul:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
 #cssmenu #menu-button {
-  display: none;
+    display: none;
 }
 #cssmenu {
-  width: auto;
-  border-radius: 4px;
-  border: 1px solid #98c571;
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1;
- 
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -2px 0px #aacf8a, inset 0 1px 0 #d4e7c4;
+    width: auto;
+    border-radius: 4px;
+    border: 1px solid #98c571;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1;
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -2px 0px #aacf8a, inset 0 1px 0 #d4e7c4;
 }
 .cssmenu_liton{
     border: 1px solid #42ade8!important;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -2px 0px #42ade8, inset 0 1px 0 #42ade8!important;
 }
 #cssmenu > ul > li {
-  float: left;
+    float: left;
 }
 #cssmenu.align-center > ul {
-  font-size: 0;
-  text-align: center;
+    font-size: 0;
+    text-align: center;
 }
 #cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
+    display: inline-block;
+    float: none;
 }
 #cssmenu.align-right > ul > li {
-  float: right;
+    float: right;
 }
 #cssmenu > ul > li > a {
-  padding: 20px 25px 21px 25px;
-  font-size: 18px;
-  line-height: 10px;
-  text-decoration: none;
-  color: #5c5c5c;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
+    padding: 20px 25px 21px 25px;
+    font-size: 18px;
+    line-height: 10px;
+    text-decoration: none;
+    color: #5c5c5c;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
 }
 #cssmenu > ul > li:first-child > a {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 #cssmenu.align-center > ul > li:first-child > a {
-  border-radius: 0;
+    border-radius: 0;
 }
 #cssmen.align-right > ul > li:first-child > a {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
-  color: #2d9431;
+    color: #2d9431;
 }
 .cssmenu_liton> ul > li.active > a {
-  color: #42ade8!important;
+    color: #42ade8!important;
 }
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
-  background: #71d375;
-  color: white;
-  
+    background: #71d375;
+    color: white;
+
 }
 
 .cssmenu_liton > ul > li:hover > a,.cssmenu_liton > ul > li > a:hover {
-  background: #42ade8!important;
-  color: white!important;
+    background: #42ade8!important;
+    color: white!important;
 }
 
 #cssmenu > ul > li:after {
-  content: '';
-  position: absolute;
-  top: 18px;
-  right: 0;
-  display: block;
-  height: 20px;
-  width: 1px;
-  opacity: .15;
-  background: rgba(0, 0, 0, 0.7);
-  background: linear-gradient(to top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 0;
+    display: block;
+    height: 20px;
+    width: 1px;
+    opacity: .15;
+    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000000, rgba(0, 0, 0, 0));
 }
 #cssmenu.align-right > ul > li:after {
-  right: auto;
-  left: -1px;
+    right: auto;
+    left: -1px;
 }
 #cssmenu > ul > li:before {
-  content: '';
-  position: absolute;
-  top: 18px;
-  right: -1px;
-  display: block;
-  height: 20px;
-  width: 1px;
-  
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: -1px;
+    display: block;
+    height: 20px;
+    width: 1px;
+
 }
 #cssmenu.align-right > ul > li:before {
-  right: auto;
-  left: 0px;
+    right: auto;
+    left: 0px;
 }
 #cssmenu > ul > li:last-child:after,
 #cssmenu > ul > li:last-child:before {
-  display: none;
+    display: none;
 }
 #cssmenu.small-screen {
-  width: 100%;
+    width: 100%;
 }
 #cssmenu.small-screen > ul,
 #cssmenu.small-screen.align-center > ul {
-  width: 100%;
-  text-align: left;
+    width: 100%;
+    text-align: left;
 }
 #cssmenu.small-screen > ul > li,
 #cssmenu.small-screen.align-center {
-  float: none;
-  display: block;
-  border-top: 1px solid rgba(100, 100, 100, 0.1);
+    float: none;
+    display: block;
+    border-top: 1px solid rgba(100, 100, 100, 0.1);
 }
 #cssmenu.small-screen > ul > li > a {
-  padding: 18px 25px;
+    padding: 18px 25px;
 }
 #cssmenu.small-screen > ul > li:after,
 #cssmenu.small-screen > ul > li:before {
-  display: none;
+    display: none;
 }
 #cssmenu.small-screen #menu-button {
-  display: block;
-  padding: 18px 25px 19px 25px;
-  cursor: pointer;
-  font-size: 15px;
-  text-decoration: none;
-  color: #5c5c5c;
+    display: block;
+    padding: 18px 25px 19px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    color: #5c5c5c;
 }
 #cssmenu.small-screen #menu-button.menu-opened {
-  color: #5c5c5c;
+    color: #5c5c5c;
 }
 #cssmenu.small-screen #menu-button:after {
-  content: "";
-  position: absolute;
-  right: 25px;
-  top: 20px;
-  display: block;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  border-top: 2px solid #5c5c5c;
-  border-bottom: 2px solid #5c5c5c;
-  width: 18px;
-  height: 3px;
-  color:#5c5c5c;
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border-top: 2px solid #5c5c5c;
+    border-bottom: 2px solid #5c5c5c;
+    width: 18px;
+    height: 3px;
+    color:#5c5c5c;
 }
 #cssmenu.small-screen #menu-button.menu-opened:after {
-  border-top: 2px solid #5c5c5c;
-  border-bottom: 2px solid #5c5c5c;
+    border-top: 2px solid #5c5c5c;
+    border-bottom: 2px solid #5c5c5c;
 }
 #cssmenu.small-screen #menu-button:before {
-  content: "";
-  position: absolute;
-  right: 25px;
-  top: 30px;
-  display: block;
-  width: 18px;
-  height: 2px;
-  background: #5c5c5c;
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #5c5c5c;
 }
 #cssmenu.small-screen #menu-button.menu-opened:before {
-  background: #444444;
+    background: #444444;
 }
 
 
@@ -454,49 +454,75 @@ ul{
 /*==========================Carousel-Slider=======================*/
 
 .carousel-fade .carousel-inner .item {
-                opacity: 0;
-                transition-property: opacity;
-            }
+    opacity: 0;
+    transition-property: opacity;
+}
 
-            .carousel-fade .carousel-inner .active {
-                opacity: 1;
-            }
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
 
-            .carousel-fade .carousel-inner .active.left,
-            .carousel-fade .carousel-inner .active.right {
-                left: 0;
-                opacity: 0;
-                z-index: 1;
-            }
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
 
-            .carousel-fade .carousel-inner .next.left,
-            .carousel-fade .carousel-inner .prev.right {
-                opacity: 1;
-            }
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
 
-            .carousel-fade{
-                z-index: 2;
-            }
+.carousel-fade{
+    z-index: 2;
+}
 
 
-            @media all and (transform-3d), (-webkit-transform-3d) {
-                .carousel-fade .carousel-inner > .item.next,
-                .carousel-fade .carousel-inner > .item.active.right {
-                    opacity: 0;
-                    -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-                }
-                .carousel-fade .carousel-inner > .item.prev,
-                .carousel-fade .carousel-inner > .item.active.left {
-                    opacity: 0;
-                    -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-                }
-                .carousel-fade .carousel-inner > .item.next.left,
-                .carousel-fade .carousel-inner > .item.prev.right,
-                .carousel-fade .carousel-inner > .item.active {
-                    opacity: 1;
-                    -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-                }
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*======================Quick Connect=======================*/
+
+            
+            #feedback{
+                position: fixed;
+                top:100px;
+                left:-390px;
+                z-index: 999999;
+                background-color: white;
             }
+            #feedback a{
+                background:url("../images/feedback-buttons.png")  no-repeat center left transparent;
+                display: block;
+                width:40px;
+                height:175px;
+                float: left;
+                text-indent:-9999em;
+                position: absolute;
+                top:120px;
+                right:-40px;
+            }
+            #feedback a:hover{
+                background-position: center right;
+            }
+            

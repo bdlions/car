@@ -23,6 +23,14 @@
                 border-bottom: 1px solid lightgray;
             }
         </style>
+        <script type="text/javascript">
+            $(function(){
+                $('.pull_feedback').on("click", function(e){
+                    $("#feedback").animate({left:$("#feedback").css("left") == "0px" ? "-390px" :"0px"});
+                });
+                
+            });
+        </script>
 <title>Contact</title>
     </head>
     <body>
@@ -49,7 +57,7 @@
                 <div class="col-md-8 col-md-offset-1 menu">
                     <div id='cssmenu'>
                         <ul>
-                            <li><a href="homepage.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li class="active"><a href="contact.html">Contact Us</a></li>
                             <li><a href="about_sunshine.html">About Us</a></li>
                             <li><a href="liton_trade.html">Liton Trading</a></li>
@@ -182,6 +190,35 @@
                     Developed by <a href="sampan-it.com"><span class="anchor_style">SAMPAN-IT</span></a>              
                 </div>
             </div>
+        </div>
+        
+        <div id="feedback">
+            <form class="col-md-12">
+                <div class="form-group heading">
+                    Contact <span> Us </span>
+                    <div class="pagelet_divider"></div>
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your Name(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your Email(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Phone(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your message(required): </label>
+                    <textarea  class="col-md-6 form-control"> </textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" style="width:150px; text-align: center;font-weight: bold; margin-top: 10px;">Send</button>
+                </div>
+            </form>
+            <a href="#" class="pull_feedback" title="Click to leave feedback">Feedback</a>
         </div>
     </body>
 </html>
