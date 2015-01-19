@@ -10,6 +10,9 @@ and open the template in the editor.
 
 /*=================== For all pages ========================*/
 
+*{
+    margin: 0 auto;
+}
 .padding_horiz_thin
 {
     display: inline-block;
