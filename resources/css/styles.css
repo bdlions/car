@@ -525,39 +525,74 @@ ul{
 
 /*======================Quick Connect=======================*/
 
-            
-            #feedback{
-                position: fixed;
-                top:100px;
-                left:-390px;
-                z-index: 999999;
-                background-color: white;
-            }
-            #feedback a{
-                background:url("../images/feedback-buttons.png")  no-repeat center left transparent;
-                display: block;
-                width:40px;
-                height:175px;
-                float: left;
-                text-indent:-9999em;
-                position: absolute;
-                top:120px;
-                right:-40px;
-            }
-            #feedback a:hover{
-                background-position: center right;
-            }
-            
-            @media all and (max-width: 991px) and (min-width: 508px){
-                #feedback{
-                    top:160px!important;
-                    left:-220px;
-                }
-            }
-            @media all and (max-width: 508px){
-                #feedback{
-                    top:180px!important;
-                    left:-220px;
-                }
-            }
-            
+
+#feedback{
+    position: fixed;
+    top:100px;
+    left:-390px;
+    z-index: 999999;
+    background-color: white;
+}
+#feedback a{
+    background:url("../images/feedback-buttons.png")  no-repeat center left transparent;
+    display: block;
+    width:40px;
+    height:175px;
+    float: left;
+    text-indent:-9999em;
+    position: absolute;
+    top:120px;
+    right:-40px;
+}
+#feedback a:hover{
+    background-position: center right;
+}
+
+/*================================Less CSS=============================== */       
+@media all and (max-width: 991px){
+    .text_align_right{
+        text-align: left!important;
+    }
+}
+
+@media all and (max-width: 1199px) and (min-width: 992px){
+
+    
+    #gmap_canvas{
+        width: 990px!important;
+        float:left!important;
+    }
+}
+@media all and (max-width: 991px) and (min-width: 700px){
+    #feedback{
+        top:170px!important;
+        left:-220px;
+    }
+    
+    #gmap_canvas{
+        width: 650px!important;
+        float:left!important;
+    }
+}
+@media all and (max-width: 699px)and (min-width: 500px){
+    #feedback{
+        top:180px!important;
+        left:-220px;
+    }
+    
+    #gmap_canvas{
+        width: 520px!important;
+        float:left!important;
+    }
+}
+@media all and (max-width: 499px){
+    #feedback{
+        top:180px!important;
+        left:-220px;
+    }
+    
+    #gmap_canvas{
+        width: 320px!important;
+        float:left!important;
+    }  
+}
