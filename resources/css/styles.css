@@ -59,7 +59,9 @@ button{
     outline:none!important; /* removes ugly dotted border but may make template more unsuable, up to you
                                      if you want to keep it! */
 }
-
+.text_align_right{
+    text-align: right;
+}
 
 /*================================  pagelets  ================================*/
 .comment_box{
@@ -129,6 +131,16 @@ button{
 .FOB_price span{
     color:#fd6e46;
     padding: 0 0 0 5px;
+}
+
+
+/*================================  Header (purnob)  ================================*/
+
+.header_wrapper{
+    margin : 0 auto;
+    width :100%;
+    background-color: #72D376;
+    padding-top: 10px;
 }
 
 /*================================  car-details (purnob)================================*/
@@ -217,12 +229,15 @@ button{
 .anchor_style,.anchor_style_export{
     font-weight: bold;
 }
-.footer_info{
+.footer_wrapper{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #4B4B4B;
     padding: 15px 0;
     font-weight: bold;
     color: white; 
-    background-color: #4B4B4B;
 }
+
 
 
 /*=======================================Menu=======================================*/
