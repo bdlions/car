@@ -62,6 +62,9 @@ button{
 .text_align_right{
     text-align: right;
 }
+.light_blue{
+    background-color: #42ade8!important;
+}
 
 /*================================  pagelets  ================================*/
 .comment_box{
