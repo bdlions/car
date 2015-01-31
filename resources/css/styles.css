@@ -145,6 +145,13 @@ button{
     background-color: #72D376;
     padding-top: 10px;
 }
+.body_wrapper{
+    margin : 0 auto;
+    width :100%;
+    padding-top: 10px;
+    background-color: white; 
+    opacity: 0.85;
+}
 
 /*================================  car-details (purnob)================================*/
 
@@ -547,6 +554,33 @@ ul{
 #feedback a:hover{
     background-position: center right;
 }
+
+
+/*======================Quick Chat=======================*/
+
+
+#chat_box{
+    position: fixed;
+    bottom: -390px;
+    right: 0px;
+    background-color: white;
+}
+#chat_box a{
+    background:url("../images/feedback-buttons_export.png")  no-repeat center top transparent;
+    display: block;
+    width:175px;
+    height:40px;
+    float: top;
+    text-indent:9999em;
+    position: absolute;
+    top: -40px;
+    right:  0px;
+}
+#chat_box a:hover{
+    background-position: center top;
+}
+
+
 
 /*================================Less CSS=============================== */       
 @media all and (max-width: 991px){

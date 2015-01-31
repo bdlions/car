@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <script type="text/javascript" src="resources/js/jquery-2.1.3.min.js"></script>
@@ -12,6 +11,10 @@
         <script type="text/javascript" src="resources/js/lightGallery.js"></script>
         <script type="text/javascript" src="resources/js/slider_feedback.js"></script>
         
+        
+        <script type="text/javascript" src="resources/js/jquery.navgoco.js"></script>
+        <link rel="stylesheet" href="resources/css/jquery.navgoco.css"/>
+
         <style>
             .main_wrapper {
                 width: 100%;
@@ -38,19 +41,54 @@
                 border-right: 2px solid lightgray;
                 border-bottom: 2px solid lightgray;
             }
+            body{
+                background: url('autumn-flowers-japan-hd.jpg');
+                
+            }
         </style>
-        <script type="text/javascript">
-            $(function(){
-                $("#car_gallary img").on("click", function(){
+        <script type="text/javascript" id="demo1-javascript">
+            $(function() {
+                $("#car_gallary img").on("click", function() {
                     $('#big_car').attr("src", $(this).attr("src"));
+                });
+                $("#auto-loop").lightGallery();
+                // Initialize navgoco with default options
+                $("#demo1").navgoco({
+                    caretHtml: '',
+                    accordion: false,
+                    openClass: 'open',
+                    save: true,
+                    cookie: {
+                        name: 'navgoco',
+                        expires: false,
+                        path: '/'
+                    },
+                    slide: {
+                        duration: 400,
+                        easing: 'swing'
+                    },
+                    // Add Active class to clicked menu item
+                    onClickAfter: function(e, submenu) {
+                        e.preventDefault();
+                        $('#demo1').find('li').removeClass('active');
+                        var li = $(this).parent();
+                        var lis = li.parents('li');
+                        li.addClass('active');
+                        lis.addClass('active');
+                    },
+                });
+
+                $("#collapseAll").click(function(e) {
+                    e.preventDefault();
+                    $("#demo1").navgoco('toggle', false);
+                });
+
+                $("#expandAll").click(function(e) {
+                    e.preventDefault();
+                    $("#demo1").navgoco('toggle', true);
                 });
             });
         </script>
-        <script>
-    	 $(document).ready(function() {
-			$("#auto-loop").lightGallery();
-		});
-         </script>
         <title>Details</title>
     </head>
     <body>
@@ -71,6 +109,7 @@
         </div>
 
         <!--BODY-->
+        <div class="body_wrapper">
         <div class="container" style="color: black;">
             <div class="row">
                 <div class="col-md-3">
@@ -109,8 +148,8 @@
                         </div>
                     </div>
                     <div class="row" >
-                            <div class="col-md-12" id="car_gallary">
-                        <div style="overflow-y: scroll; overflow-x: hidden; height: 750px; width: 262px;">
+                        <div class="col-md-12" id="car_gallary">
+                            <div style="overflow-y: scroll; overflow-x: hidden; height: 750px; width: 262px;">
                                 <div class="message_friends_divider_full" >
                                     <div class="row">
                                         <div class="col-md-4">
@@ -403,21 +442,58 @@
                                         </div>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <span class="main_name">TOYOTA NOAH 2010/7 YY</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="main_name">Quantity:</span>
+                            <button class="btn btn-default">2</button>
+                        </div> 
+                    </div>
+                        <div class="row">
+                        <div class="col-md-12">
                             <div class="pagelet_divider"></div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-9">
                             <span class="details_value">Location: </span>
                             <span style="color: black; font-weight: bold;">Japan</span>
+                        </div>
+                        <div class="col-md-3">
+                                    <ul id="demo1" class="nav">
+                                        <li>
+                                            <a href="#">Options</a>
+                                            <ul>
+                                                <li><a href="#">Auto gear</a></li>
+                                                <li><a href="#">AC</a></li>
+                                                <li><a href="#">Power Steering</a></li>
+                                                <li><a href="#">Power Windows</a></li>
+                                                <li><a href="#">DVD</a></li>
+                                                <li><a href="#">B/Camera</a></li>
+                                                <li><a href="#">HID Headlight</a></li>
+                                                <li><a href="#">Sun Roof</a></li>
+                                                <li><a href="#">Leather Seat</a></li>
+                                                <li><a href="#">Power Seat</a></li>
+                                                <li><a href="#">Wooden Steering</a></li>
+                                                <li><a href="#">R-Spoiler</a></li>
+                                                <li><a href="#">Wooden Panel</a></li>
+                                                <li><a href="#">Steering Switch Control</a></li>
+                                                <li><a href="#">Under Nickle Side Step</a></li>
+                                                <li><a href="#">Roof Rail</a></li>
+                                                <li><a href="#">Original Nickle Door Pirra</a></li>
+                                                <li><a href="#">Fog Lamp</a></li>
+                                                <li><a href="#">New Allay Rim</a></li>
+                                                <li><a href="#">Tyre</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                         </div>
                     </div>
                     <div class="row form-group"></div>
@@ -459,6 +535,8 @@
                             </div>
                         </div>
                     </div>
+                    
+                    
                     <!---------------------Negotiate Modal------------------------------------------------->
                     <div class="modal fade" id="negotiate_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -502,38 +580,42 @@
                                 </div>
                                 <div class="modal-footer">
                                     <input class="btn btn-success" type="submit" value="Send" id="submit">
-                                     <a href="#" class="btn btn-danger" data-dismiss="modal">Cancel</a>
+                                    <a href="#" class="btn btn-danger" data-dismiss="modal">Cancel</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="row form-group"></div>
                     <div class="row">
                         <div class="col-md-8">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <button class="btn btn-success form-control" type="button">Sale</button>
+                                    <button class="btn btn-success form-control" type="button">Buy</button>
                                 </div>
                                 <div class="col-md-4">
                                     <button class="btn btn-danger form-control" type="button">Sold</button>
                                 </div>
                                 <div class="col-md-4">
-                                   <button class="btn btn-success form-control" type="button" data-toggle="modal" data-target="#negotiate_modal">Negotiate</button>
+                                    <button class="btn btn-success form-control" type="button" data-toggle="modal" data-target="#negotiate_modal">Negotiate</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4"></div>
+                        <div class=" col-md-offset-1 col-md-3">
+                            <button style="color: #fff; font-weight: bold;" class="btn btn-warning form-control" type="button">Quick Chat</button>
+                        </div>
                     </div>
-                    <div class="row form-group"></div>
                     <div class="row">
                         <div class="col-md-8">
+                            <div class="row form-group"></div>
+                    <div class="row">
+                        <div class="col-md-12">
                             <span style="font-weight: bold;">Other Photos:</span>
                         </div>
                     </div>
                     <div class="row form-group"></div>
                     <div class="row">
-                        <div class="col-md-8" >
+                        <div class="col-md-12" >
                             <div class="form-group">
                                 <ul id="auto-loop" class="gallery">
                                     <li data-src="car_1.jpg"> 
@@ -605,115 +687,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row form-group"></div>
-                    <div class="row form-group"></div>
-                    <div class="row form-group">
-                        <div class="col-md-8">
-                            <div style="text-align: center;" class="Accessories_header">
-                                <span class="contact_header">Accessories</span>
-                            </div>
                         </div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div style="text-align: center; background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Air Bag
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Anti-Lock Break System
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Air Conditioner
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Alloy Wheels
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group"></div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Back Tire
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Fog Lights
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Grill Guard
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Leather Seats
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group"></div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Navigation
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Power Steering
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Power Windows
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Roof Rails
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group"></div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Rear Spoiler
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Sun Roof
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: lightgray; height: 55px;   width: 120px; padding-top: 10px;">
-                                        TV
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div align='center' style="background-color: #FFCCCB; height: 55px;   width: 120px; padding-top: 10px;">
-                                        Dual Air Bags
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-4">
+                            
                         </div>
-                        <div class="row form-group"></div>
-                        <div class="col-md-4"></div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <!--FOOTER-->
@@ -729,7 +710,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="feedback">
             <form class="col-md-12">
                 <div class="form-group heading">
@@ -757,6 +738,35 @@
                 </div>
             </form>
             <a href="#" class="pull_feedback" title="Click to leave feedback">Feedback</a>
+        </div>
+        
+       <div id="chat_box">
+            <form class="col-md-12">
+                <div class="form-group heading">
+                    Contact <span> Us </span>
+                    <div class="pagelet_divider"></div>
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your Name(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your Email(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Phone(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your message(required): </label>
+                    <textarea  class="col-md-6 form-control"> </textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" style="width:150px; text-align: center;font-weight: bold; margin-top: 10px;">Send</button>
+                </div>
+            </form>
+            <a href="#" id="chat_opener" title="Click to leave feedback">Feedback</a>
         </div>
     </body>
 </html>
