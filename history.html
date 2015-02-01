@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <script type="text/javascript" src="resources/js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="resources/js/script.js"></script>
+        <script type="text/javascript" src="resources/js/slider_feedback.js"></script>
+        <link rel="stylesheet" href="resources/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="resources/css/styles.css"/>
+
+        <style>
+            .main_wrapper {
+                width: 100%;
+                margin: 0 auto;
+
+            }
+            .top{ background-color : #703684 ;}
+            .middle{ background-color:#EDF0F5 ;}
+            .footer{background-color: #FFFFFF;}
+            .pagelet{
+                background-color: white;
+                padding: 15px;
+                margin-bottom: 1px;
+            }
+            .pagelet_divider{
+                margin-top: 15px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #FE7243;
+            }
+            .user_comment{
+                padding: 5px 0px 5px 0px; 
+            }
+            .message_friends_divider_full{
+                padding: 10px;
+                border: 2px solid lightgray;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function(){
+                $("#sunshine_car-gallary img").on("click", function(){
+                    $('#sunshine_big_car').attr("src", $(this).attr("src"));
+                });
+                
+                $("#liton_car-gallary img").on("click", function(){
+                    $('#liton_big_car').attr("src", $(this).attr("src"));
+                });
+            });
+        </script>
+        
+        <title>History</title>
+    </head>
+    <body>
+        <!--HEADER-->
+        <div class="header_wrapper">
+            <div class="container">
+                <div class="row form-group">
+                    <div class="col-md-4 col-md-offset-4">
+                        <img src="phone_icon.png" width="18" height="18">
+                        <span class="contact_info">+880017 20233988</span>
+                    </div>
+                    <div class="col-md-4 text_align_right">
+                        <img src="location_icon.png" width="18" height="18">
+                        <span class="contact_info">485/1, Block# C, Khilgaon, Dhaka- 1219.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--BODY-->
+        <div class="container" style="color: black;">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="sunshine_logo.png" width="150" height="100">
+                </div>
+                <div class="col-md-8 col-md-offset-1 menu">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href="index.html">Home (BD)</a></li>
+                            <li><a href="about_sunshine.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li class="active"><a href="liton_trade.html">Liton Trading (JP)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row form-group"></div>
+            <!------------------------About Starts-------------------------->   
+            
+
+        <!--FOOTER-->
+        <div class="footer_wrapper">
+            <div class="container">
+                <div class="row footer_info">
+                    <div class="col-md-8">
+                        Copyright &COPY; 2015. <a href="#"><span class="anchor_style_export">SunShine Car Center.</span></a> All rights reserved     
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 text_align_right" >
+                        Developed by <a href="sampan-it.com"><span class="anchor_style_export">SAMPAN-IT</span></a>              
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="feedback">
+            <form class="col-md-12">
+                <div class="form-group heading">
+                    Contact <span> Us </span>
+                    <div class="pagelet_divider"></div>
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your Name(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your Email(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Phone(required): </label>
+                    <input class="col-md-6 form-control">
+                </div>
+                <div class="form-group">
+                    <label class="form_title">Your message(required): </label>
+                    <textarea  class="col-md-6 form-control"> </textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" style="width:150px; text-align: center;font-weight: bold; margin-top: 10px;">Send</button>
+                </div>
+            </form>
+            <a href="#" class="pull_feedback" title="Click to leave feedback">Feedback</a>
+        </div>
+    </body>
+</html>

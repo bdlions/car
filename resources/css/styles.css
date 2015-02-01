@@ -9,7 +9,31 @@ and open the template in the editor.
 */
 
 /*=================== For all pages ========================*/
+.main_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+.top{ background-color : #703684 ;}
+.middle{ background-color:#EDF0F5 ;}
+.footer{background-color: #FFFFFF;}
 
+.pagelet_divider{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #FE7243;
+}
+.user_comment{
+    padding: 5px 0px 5px 0px; 
+}
+.message_friends_divider_full{
+    border-top: 2px solid lightgray;
+}
+.message_friends_divider_full,.message_friends_divider_others{
+    padding: 10px;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
 *{
     margin: 0 auto;
 }
@@ -150,7 +174,7 @@ button{
     width :100%;
     padding-top: 10px;
     background-color: white; 
-    opacity: 0.85;
+    opacity: 0.95;
 }
 
 /*================================  car-details (purnob)================================*/
@@ -209,6 +233,12 @@ button{
     color: #FE7243; 
     font-weight: bold;
     font-size: 12px;
+}
+.option_modal{
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 13px;
+    color: black; 
 }
 
 /*================================  Contact (purnob)================================*/
@@ -571,13 +601,23 @@ ul{
     width:175px;
     height:40px;
     float: top;
-    text-indent:9999em;
+    text-indent:9999999em;
     position: absolute;
-    top: -40px;
-    right:  0px;
+    top: -132px;
+    right:  13px;
 }
 #chat_box a:hover{
     background-position: center top;
+}
+
+.chat_heading{
+    padding-top: 10px;
+    text-align: center;
+    background-color: #FF9507;
+    color: #fff;
+}
+.chat_margin{
+    margin-bottom: 50px;
 }
 
 
@@ -591,7 +631,7 @@ ul{
 
 @media all and (max-width: 1199px) and (min-width: 992px){
 
-    
+
     #gmap_canvas{
         width: 990px!important;
         float:left!important;
@@ -602,7 +642,7 @@ ul{
         top:170px!important;
         left:-220px;
     }
-    
+
     #gmap_canvas{
         width: 650px!important;
         float:left!important;
@@ -613,7 +653,7 @@ ul{
         top:180px!important;
         left:-220px;
     }
-    
+
     #gmap_canvas{
         width: 520px!important;
         float:left!important;
@@ -624,9 +664,10 @@ ul{
         top:180px!important;
         left:-220px;
     }
-    
+
     #gmap_canvas{
         width: 320px!important;
         float:left!important;
     }  
 }
+
