@@ -10,7 +10,7 @@ $(function() {
     });
 
     $('#chat_opener').on("click", function(e) {
-        var bottom = -390;
+        var bottom = -305;
         $("#chat_box").animate({bottom: $("#chat_box").css("bottom") == "0px" ? bottom + "px" : "0px"});
     });
 

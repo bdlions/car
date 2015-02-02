@@ -174,7 +174,11 @@ button{
     width :100%;
     padding-top: 10px;
     background-color: white; 
-    opacity: 0.95;
+}
+.bullet_ul{
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: none;
 }
 
 /*================================  car-details (purnob)================================*/
@@ -497,17 +501,18 @@ ul{
 .gallery li {
     display: block;
     float: left;
-    height: 100px;
+    height: 120px;
+    width: 130px;
     margin-bottom: 6px;
-    margin-right: 6px;
-    width: 100px;
+    margin-right: 10px;
 }
 .gallery li a {
     height: 100px;
     width: 100px;
 }
 .gallery li a img {
-    max-width: 100px;
+    max-width: 130px;
+    max-height: 120px;
 }
 
 /*==========================Carousel-Slider=======================*/
@@ -591,15 +596,15 @@ ul{
 
 #chat_box{
     position: fixed;
-    bottom: -390px;
+    bottom: -305px;
     right: 0px;
     background-color: white;
 }
 #chat_box a{
-    background:url("../images/feedback-buttons_export.png")  no-repeat center top transparent;
+    background:url("../images/let_chat_icon.png")  no-repeat center top transparent;
     display: block;
     width:175px;
-    height:40px;
+    height:140px;
     float: top;
     text-indent:9999999em;
     position: absolute;
