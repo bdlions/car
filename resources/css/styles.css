@@ -9,6 +9,8 @@ and open the template in the editor.
 */
 
 /*=================== For all pages ========================*/
+body{
+}
 .main_wrapper {
     width: 100%;
     margin: 0 auto;
@@ -29,6 +31,7 @@ and open the template in the editor.
     border-top: 2px solid lightgray;
 }
 .message_friends_divider_full,.message_friends_divider_others{
+    background-color: white;
     padding: 10px;
     border-left: 2px solid lightgray;
     border-right: 2px solid lightgray;
@@ -89,7 +92,9 @@ button{
 .light_blue{
     background-color: #42ade8!important;
 }
-
+.white_back{
+    background-color:white;
+}
 /*================================  pagelets  ================================*/
 .comment_box{
 
@@ -179,6 +184,16 @@ button{
     list-style-type: disc;
     list-style-position: outside;
     list-style-image: none;
+}
+.banner_wrapper{
+    margin : 0 auto;
+    width :100%;
+}
+.slider_wrapper{
+    margin : 0 auto;
+    width :100%;
+    background: url(../images/Japanese-Houses-design.png);
+    background-size: cover;
 }
 
 /*================================  car-details (purnob)================================*/
@@ -565,13 +580,13 @@ ul{
     }
 }
 
-/*======================Quick Connect=======================*/
+/*======================Quick Contact=======================*/
 
 
 #feedback{
     position: fixed;
     top:100px;
-    left:-390px;
+    left:-392px;
     z-index: 999999;
     background-color: white;
 }
