@@ -9,7 +9,22 @@ and open the template in the editor.
 */
 
 /*=================== For all pages ========================*/
-body{
+
+@font-face {
+    font-family: lobster;
+    src: url(../fonts/Lobster_1.3.otf);
+}
+@font-face {
+    font-family: raleway_med;
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: montserrat_reg;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: loveQuarrel_reg;
+    src: url(../fonts/LoversQuarrel-Regular.otf);
 }
 .main_wrapper {
     width: 100%;
@@ -95,6 +110,11 @@ button{
 .white_back{
     background-color:white;
 }
+.pt_15{
+    padding-top: 15px;
+}
+
+
 /*================================  pagelets  ================================*/
 .comment_box{
 
@@ -164,7 +184,9 @@ button{
     color:#fd6e46;
     padding: 0 0 0 5px;
 }
-
+.car:hover{
+    opacity:0.6;
+}
 
 /*================================  Header (purnob)  ================================*/
 
@@ -177,7 +199,7 @@ button{
 .body_wrapper{
     margin : 0 auto;
     width :100%;
-    padding-top: 10px;
+    padding-top: 25px;
     background-color: white; 
 }
 .bullet_ul{
@@ -192,8 +214,11 @@ button{
 .slider_wrapper{
     margin : 0 auto;
     width :100%;
-    background: url(../images/Japanese-Houses-design.png);
+    background: url(../images/temple.jpg) no-repeat;
     background-size: cover;
+    background-position: 50% 50%;   /* this one centers the background image */
+    background-position: right top;
+
 }
 
 /*================================  car-details (purnob)================================*/
@@ -259,6 +284,13 @@ button{
     font-size: 13px;
     color: black; 
 }
+.option_modal ul li{
+    font-size:16px;
+    font-family: montserrat_reg;
+}
+.modal-body{
+    padding-bottom: 50px!important;
+}
 
 /*================================  Contact (purnob)================================*/
 
@@ -276,6 +308,27 @@ button{
 }
 .form_title{
     color:#868686;
+}
+
+/*===============================Biography=======================================*/
+
+.biography_wrapper{
+    
+    width:100%;
+    margin:0 auto;
+}
+.bio_text{
+    font-family: montserrat_reg;
+    font-size:16px;
+    color:grey;
+}
+.bio_title{
+    font-family: loveQuarrel_reg;
+    font-size:60px;
+    color:#FE7243;
+}
+.bio_title span{
+    color:#3c3c3c;
 }
 /*================================  footer (purnob)================================*/
 
@@ -301,7 +354,10 @@ button{
 
 /*=======================================Menu=======================================*/
 
-.menu{padding: 20px 15px 0 0;}
+.menu{
+    padding-top: 20px;
+    padding-right:15px;
+}
 
 #cssmenu,
 #cssmenu ul,
@@ -646,6 +702,10 @@ ul{
 @media all and (max-width: 991px){
     .text_align_right{
         text-align: left!important;
+    }
+    .menu{
+        padding-left: 0!important;
+        padding-top: 0!important;
     }
 }
 
