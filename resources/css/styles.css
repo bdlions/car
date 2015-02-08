@@ -9,6 +9,10 @@ and open the template in the editor.
 */
 
 /*=================== For all pages ========================*/
+@font-face {
+    font-family: dancing;
+    src: url(../fonts/DancingScript-Regular.otf);
+}
 
 @font-face {
     font-family: lobster;
@@ -26,6 +30,7 @@ and open the template in the editor.
     font-family: loveQuarrel_reg;
     src: url(../fonts/LoversQuarrel-Regular.otf);
 }
+
 .main_wrapper {
     width: 100%;
     margin: 0 auto;
@@ -134,8 +139,57 @@ button{
     padding: 5px 0px 5px 0px; 
 }
 
+/*================================  BioGraphy  ================================*/
+.grow img {
+    height: 225px;
+    width: 220px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.grow img:hover {
+    width: 200px;
+    height: 239px;
+}
+.hoverTable{
+    width: 700px; 
+    border-collapse:collapse; 
+}
+.hoverTable td{ 
+    border:#FFD385 1px solid;
+}
+.hover_table_td_1{ 
+    padding: 7px 7px 7px 55px;
+}
+.hover_table_td_others{ 
+    text-align: center;
+}
 
-
+.hoverTable th{ 
+    padding:7px; border:#4e95f4 1px solid;
+    text-align: center;
+    background-color: #72D376;
+    color: white;
+}
+.color:hover {
+    background-color: #4e95f4;
+    color: white;
+    font-weight: bold;
+}
+.welcome{
+   font-family: dancing; 
+   font-size: 30px; 
+   color: #72D376; 
+   font-weight: bold;
+}
+.style_para{
+    font-weight: bold; 
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 50px;
+}
 
 /*================================  Landing Page (purnob)  ================================*/
 
@@ -313,7 +367,7 @@ button{
 /*===============================Biography=======================================*/
 
 .biography_wrapper{
-    
+
     width:100%;
     margin:0 auto;
 }
@@ -324,8 +378,11 @@ button{
 }
 .bio_title{
     font-family: loveQuarrel_reg;
-    font-size:60px;
-    color:#FE7243;
+    font-size: 85px;
+    color:#FE7243; 
+    margin-top: 15px;
+    padding-left: 65px;
+    text-align: center;
 }
 .bio_title span{
     color:#3c3c3c;
