@@ -824,7 +824,8 @@ ul{
 }
 .list_title:hover{
     background-color: transparent!important;
-    text-decoration: underline!important;
+    text-decoration: none!important;
+    background-color: #42ADE8!important;
 }
 .list > li{
    list-style-type: none;
