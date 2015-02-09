@@ -121,9 +121,7 @@ button{
 
 
 /*================================  pagelets  ================================*/
-.comment_box{
 
-}
 .pagelet{
     background-color: white;
     padding: 15px;
@@ -137,6 +135,44 @@ button{
 }
 .user_comment{
     padding: 5px 0px 5px 0px; 
+}
+
+
+/*================================  Admin Panel  ================================*/
+
+.list > li{
+   list-style-type: none; 
+   cursor: pointer;
+   color: black;
+   display: block;
+   list-style-type: none;
+   text-align: left;
+   padding: 5px 0;
+}
+.list > li a{
+    color: black !important;
+    padding: 7px;
+    border-radius: 3px!important;
+    text-decoration: none;
+}
+.list > li a:hover{
+    background-color: lightgray;
+    
+}
+.list > li> ol > li{
+   list-style-type: none;
+}
+.panel_header{
+    color: #42ADE8!important;
+    font-weight: bold;
+}
+.welcome_admin,.welcome_admin span{
+   font-family: dancing; 
+   font-size: 50px; 
+   font-weight: bold;
+}
+.welcome_admin span{
+   color: #fe7243; 
 }
 
 /*================================  BioGraphy  ================================*/
