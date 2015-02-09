@@ -144,42 +144,6 @@ button{
 }
 
 
-/*================================  Admin Panel  ================================*/
-
-.list > li{
-   list-style-type: none; 
-   cursor: pointer;
-   color: black;
-   display: block;
-   list-style-type: none;
-   text-align: left;
-   padding: 5px 0;
-}
-.list > li a{
-    color: black !important;
-    padding: 7px;
-    border-radius: 3px!important;
-    text-decoration: none;
-}
-.list > li a:hover{
-    background-color: lightgray;
-    
-}
-.list > li> ol > li{
-   list-style-type: none;
-}
-.panel_header{
-    color: #42ADE8!important;
-    font-weight: bold;
-}
-.welcome_admin,.welcome_admin span{
-   font-family: dancing; 
-   font-size: 50px; 
-   font-weight: bold;
-}
-.welcome_admin span{
-   color: #fe7243; 
-}
 
 /*================================  BioGraphy  ================================*/
 .grow img {
@@ -850,3 +814,49 @@ ul{
     }  
 }
 
+
+/*================================  Admin Panel  ================================*/
+
+.list_title{
+ font-weight: bold;
+ font-size: 14px;
+ font-family:montserrat_reg;
+}
+.list_title:hover{
+    background-color: transparent!important;
+    text-decoration: underline!important;
+}
+.list > li{
+   list-style-type: none;
+   color: black;
+   list-style-type: none;
+   text-align: left;
+   padding: 5px 0;
+}
+.list > li a{
+    
+    display: block;
+    color: black !important;
+    padding: 7px;
+    border-radius: 3px!important;
+    text-decoration: none;
+}
+.list > li a:hover{
+    background-color: #72D376;
+    color:#5c5c5c!important;
+}
+.list > li> ol > li{
+   list-style-type: none;
+}
+.panel_header{
+    color: #42ADE8!important;
+    font-weight: bold;
+}
+.welcome_admin,.welcome_admin span{
+   font-family: dancing; 
+   font-size: 50px; 
+   font-weight: bold;
+}
+.welcome_admin span{
+   color: #fe7243; 
+}
