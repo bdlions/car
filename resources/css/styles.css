@@ -60,6 +60,12 @@ and open the template in the editor.
 *{
     margin: 0 auto;
 }
+.pl_none{
+    padding-left:0!important;
+}
+.mt_none{
+    margin-top:0!important;
+}
 .padding_horiz_thin
 {
     display: inline-block;
@@ -178,7 +184,7 @@ button{
 /*================================  BioGraphy  ================================*/
 .grow img {
     height: 225px;
-    width: 220px;
+    width: 200px;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -186,8 +192,8 @@ button{
     transition: all 1s ease;
 }
 .grow img:hover {
-    width: 200px;
-    height: 239px;
+    width: 210px;
+    height: 250px;
 }
 .hoverTable{
     width: 700px; 
