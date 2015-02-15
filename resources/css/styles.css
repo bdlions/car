@@ -57,8 +57,17 @@ and open the template in the editor.
     border-right: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
 }
+.slider_divider{
+    background-color: white;
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
 *{
     margin: 0 auto;
+}
+.no_pad{
+    padding:0!important;
 }
 .pl_none{
     padding-left:0!important;
