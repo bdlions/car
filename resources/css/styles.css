@@ -48,7 +48,7 @@ and open the template in the editor.
     padding: 5px 0px 5px 0px; 
 }
 .message_friends_divider_full{
-    border-top: 2px solid lightgray;
+    border-top: 1px solid lightgray;
 }
 .message_friends_divider_full,.message_friends_divider_others{
     background-color: white;
