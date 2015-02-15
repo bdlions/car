@@ -58,8 +58,8 @@
 	overflow: hidden;
 }
 .wowslider-container2 .ws_images{
-	max-height: 500px!important;
-	max-width: 650px!important;
+	max-height: 550px!important;
+	max-width: 680px!important;
 }
 
 #wowslider-container1 .ws_images ul a{
@@ -73,7 +73,7 @@
 	max-width: none !important;
 }
 .wowslider-container2 img{
-	max-height: 350px!important;
+	max-height: 420px!important;
 }
 #wowslider-container1 .ws_images .ws_list img,
 #wowslider-container1 .ws_images > div > img{
